@@ -7,13 +7,14 @@ const Sidebar = ({ isMobileOpen, onMobileClose }) => {
   const location = useLocation();
   const [isCollapsed, setIsCollapsed] = useState(false);
 
-  const menuItems = [
+const menuItems = [
     { path: "/", label: "Dashboard", icon: "LayoutDashboard" },
     { path: "/events", label: "Events", icon: "Calendar" },
     { path: "/blog", label: "Blog", icon: "FileText" },
     { path: "/news", label: "News", icon: "Newspaper" },
     { path: "/updates", label: "Updates", icon: "Bell" },
     { path: "/files", label: "Files", icon: "FolderOpen" },
+    { path: "/admin-users", label: "Admin Users", icon: "Users" },
   ];
 
   const isActive = (path) => {

@@ -7,16 +7,18 @@ import Blog from "@/components/pages/Blog";
 import News from "@/components/pages/News";
 import Updates from "@/components/pages/Updates";
 import Files from "@/components/pages/Files";
+import AdminUsers from "@/components/pages/AdminUsers";
 import EventForm from "@/components/pages/EventForm";
 import BlogForm from "@/components/pages/BlogForm";
 import NewsForm from "@/components/pages/NewsForm";
 import UpdateForm from "@/components/pages/UpdateForm";
+import AdminUserForm from "@/components/pages/AdminUserForm";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-slate-850">
-        <Routes>
+<Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="events" element={<Events />} />
@@ -32,6 +34,9 @@ function App() {
             <Route path="updates/new" element={<UpdateForm />} />
             <Route path="updates/edit/:id" element={<UpdateForm />} />
             <Route path="files" element={<Files />} />
+            <Route path="admin-users" element={<AdminUsers />} />
+            <Route path="admin-users/new" element={<AdminUserForm />} />
+            <Route path="admin-users/edit/:id" element={<AdminUserForm />} />
           </Route>
         </Routes>
         <ToastContainer

@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "name": "John Smith",
+    "email": "john.smith@company.com",
+    "role": "Super Admin",
+    "status": "Active",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "lastLogin": "2024-03-20T14:22:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@company.com",
+    "role": "Admin",
+    "status": "Active",
+    "createdAt": "2024-02-01T09:15:00Z",
+    "lastLogin": "2024-03-19T11:45:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Mike Davis",
+    "email": "mike.davis@company.com",
+    "role": "Moderator",
+    "status": "Inactive",
+    "createdAt": "2024-01-20T16:00:00Z",
+    "lastLogin": "2024-03-10T08:30:00Z"
+  },
+  {
+    "Id": 4,
+    "name": "Emily Wilson",
+    "email": "emily.wilson@company.com",
+    "role": "Admin",
+    "status": "Active",
+    "createdAt": "2024-02-15T11:20:00Z",
+    "lastLogin": "2024-03-20T16:10:00Z"
+  },
+  {
+    "Id": 5,
+    "name": "Alex Chen",
+    "email": "alex.chen@company.com",
+    "role": "Moderator",
+    "status": "Pending",
+    "createdAt": "2024-03-01T13:45:00Z",
+    "lastLogin": null
+  }
+]
