@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "title": "Navigating International Trade in 2024",
+    "content": "The landscape of international trade continues to evolve rapidly in 2024. With new regulations, shifting market dynamics, and emerging technologies, businesses must stay informed and adaptable. This comprehensive guide explores the key trends and strategies that will define successful international trade operations this year.\n\nKey areas of focus include digital transformation in supply chains, sustainability requirements, and new compliance frameworks. Organizations that embrace these changes while maintaining operational efficiency will find themselves well-positioned for growth in the global marketplace.",
+    "category": "Trade Insights",
+    "tags": ["international", "trade", "2024", "trends", "business"],
+    "published": true,
+    "files": [
+      {
+        "name": "trade-statistics-2024.pdf",
+        "size": 2340000,
+        "type": "application/pdf",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-14T09:30:00Z"
+  },
+  {
+    "Id": 2,
+    "title": "Digital Transformation in Supply Chain Management",
+    "content": "The digital revolution has fundamentally changed how supply chains operate. From AI-powered demand forecasting to blockchain-based tracking systems, technology is enabling unprecedented visibility and efficiency in supply chain operations.\n\nCompanies that have embraced digital transformation report significant improvements in cost reduction, delivery times, and customer satisfaction. This post examines the key technologies driving this transformation and provides practical guidance for implementation.",
+    "category": "Technology",
+    "tags": ["digital", "supply chain", "AI", "blockchain", "efficiency"],
+    "published": true,
+    "files": [],
+    "createdAt": "2024-01-12T14:15:00Z"
+  },
+  {
+    "Id": 3,
+    "title": "Sustainable Business Practices: A Competitive Advantage",
+    "content": "Sustainability is no longer just about corporate responsibility—it's become a key differentiator in competitive markets. Businesses that prioritize environmental and social sustainability are seeing measurable benefits in customer loyalty, operational efficiency, and access to capital.\n\nThis article explores how trade organizations can implement sustainable practices that drive both environmental impact and business value. From green supply chains to circular economy principles, we cover the strategies that are reshaping modern business.",
+    "category": "Sustainability",
+    "tags": ["sustainability", "environment", "competitive advantage", "ESG"],
+    "published": false,
+    "files": [
+      {
+        "name": "sustainability-framework.docx",
+        "size": 1890000,
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "#"
+      },
+      {
+        "name": "case-studies.pdf",
+        "size": 4560000,
+        "type": "application/pdf",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-10T11:45:00Z"
+  },
+  {
+    "Id": 4,
+    "title": "Member Spotlight: Innovation in Manufacturing",
+    "content": "This month we're highlighting three of our member organizations who are leading the way in manufacturing innovation. From automated production lines to sustainable materials, these companies demonstrate how traditional manufacturing can embrace cutting-edge technology.\n\nThese success stories provide valuable insights for other manufacturers looking to modernize their operations while maintaining quality and efficiency standards.",
+    "category": "Member Spotlight",
+    "tags": ["members", "manufacturing", "innovation", "automation", "success"],
+    "published": true,
+    "files": [],
+    "createdAt": "2024-01-08T16:20:00Z"
+  }
+]

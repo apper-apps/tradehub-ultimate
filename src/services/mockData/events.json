@@ -1,0 +1,75 @@
+[
+  {
+    "Id": 1,
+    "title": "Annual Trade Summit 2024",
+    "description": "Join industry leaders for our biggest trade event of the year. Network with professionals, attend keynote sessions, and discover new business opportunities.",
+    "date": "2024-12-15T09:00:00Z",
+    "location": "Convention Center Downtown, Main Hall",
+    "files": [
+      {
+        "name": "summit-agenda.pdf",
+        "size": 2458000,
+        "type": "application/pdf",
+        "url": "#"
+      },
+      {
+        "name": "speaker-bios.docx",
+        "size": 1234000,
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-10T10:30:00Z",
+    "updatedAt": "2024-01-15T14:20:00Z"
+  },
+  {
+    "Id": 2,
+    "title": "Monthly Networking Breakfast",
+    "description": "Connect with fellow trade organization members over breakfast. Informal networking session with light presentations from member businesses.",
+    "date": "2024-02-20T08:00:00Z",
+    "location": "Grand Hotel, Maple Room",
+    "files": [],
+    "createdAt": "2024-01-12T09:15:00Z",
+    "updatedAt": "2024-01-12T09:15:00Z"
+  },
+  {
+    "Id": 3,
+    "title": "Export Regulations Workshop",
+    "description": "Comprehensive workshop covering new export regulations and compliance requirements. Essential for businesses engaged in international trade.",
+    "date": "2024-03-05T13:00:00Z",
+    "location": "Trade Center, Conference Room B",
+    "files": [
+      {
+        "name": "regulations-handbook.pdf",
+        "size": 5670000,
+        "type": "application/pdf",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-08T15:45:00Z",
+    "updatedAt": "2024-01-14T11:30:00Z"
+  },
+  {
+    "Id": 4,
+    "title": "Small Business Resource Fair",
+    "description": "Resources and support for small businesses in our trade organization. Connect with service providers, financial institutions, and government agencies.",
+    "date": "2024-04-10T10:00:00Z",
+    "location": "Community Center, Exhibition Hall",
+    "files": [
+      {
+        "name": "exhibitor-list.xlsx",
+        "size": 892000,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "url": "#"
+      },
+      {
+        "name": "resource-guide.pdf",
+        "size": 3456000,
+        "type": "application/pdf",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-05T12:20:00Z",
+    "updatedAt": "2024-01-13T16:45:00Z"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "type": "event",
+    "title": "Q4 Trade Summit Created",
+    "description": "Annual trade summit event scheduled for December",
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "type": "blog",
+    "title": "Market Trends Analysis Published",
+    "description": "New blog post about emerging market trends",
+    "createdAt": "2024-01-15T09:15:00Z"
+  },
+  {
+    "Id": 3,
+    "type": "news",
+    "title": "Industry Regulations Update",
+    "description": "High priority news about new regulations",
+    "createdAt": "2024-01-15T08:45:00Z"
+  },
+  {
+    "Id": 4,
+    "type": "update",
+    "title": "Membership Portal Maintenance",
+    "description": "System maintenance announcement for members",
+    "createdAt": "2024-01-15T07:30:00Z"
+  },
+  {
+    "Id": 5,
+    "type": "file",
+    "title": "Annual Report 2024 Uploaded",
+    "description": "Comprehensive annual report document added",
+    "createdAt": "2024-01-15T06:20:00Z"
+  },
+  {
+    "Id": 6,
+    "type": "event",
+    "title": "Networking Breakfast Updated",
+    "description": "Monthly networking event details modified",
+    "createdAt": "2024-01-14T16:45:00Z"
+  }
+]

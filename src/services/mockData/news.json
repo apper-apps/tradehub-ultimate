@@ -1,0 +1,84 @@
+[
+  {
+    "Id": 1,
+    "headline": "New Federal Trade Regulations Take Effect March 1st",
+    "content": "The Department of Commerce has announced new federal trade regulations that will impact all member organizations engaged in international commerce. These regulations introduce enhanced reporting requirements and updated compliance standards for cross-border transactions.\n\nKey changes include mandatory digital documentation for all exports over $10,000, revised customs classification requirements, and new environmental impact assessments for certain product categories. Member organizations are strongly encouraged to review these requirements and update their processes accordingly.\n\nOur legal affairs committee will be hosting information sessions throughout February to help members understand and implement these changes effectively.",
+    "priority": "high",
+    "featuredImage": "https://example.com/trade-regulations.jpg",
+    "attachments": [
+      {
+        "name": "federal-regulations-summary.pdf",
+        "size": 3450000,
+        "type": "application/pdf",
+        "url": "#"
+      },
+      {
+        "name": "compliance-checklist.docx",
+        "size": 890000,
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-15T08:45:00Z"
+  },
+  {
+    "Id": 2,
+    "headline": "Trade Organization Announces Partnership with Global Logistics Network",
+    "content": "We are excited to announce a strategic partnership with International Logistics Solutions (ILS), a leading global logistics network. This partnership will provide our members with preferential rates and enhanced services for international shipping and customs clearance.\n\nBenefits include reduced shipping costs, expedited customs processing, and access to ILS's advanced tracking and reporting systems. The partnership takes effect immediately, and member organizations can begin accessing these benefits by contacting our member services team.\n\nThis collaboration represents our ongoing commitment to providing tangible value and support to our member community.",
+    "priority": "medium",
+    "featuredImage": "https://example.com/logistics-partnership.jpg",
+    "attachments": [
+      {
+        "name": "partnership-benefits.pdf",
+        "size": 1230000,
+        "type": "application/pdf",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-13T11:20:00Z"
+  },
+  {
+    "Id": 3,
+    "headline": "Registration Open for Annual Economic Summit",
+    "content": "Registration is now open for our Annual Economic Summit, scheduled for May 15-17 at the Metropolitan Convention Center. This year's theme is 'Building Resilient Trade Networks in a Connected World.'\n\nThe summit will feature keynote presentations from industry leaders, panel discussions on emerging market trends, and networking opportunities with trade professionals from around the globe. Early bird registration discounts are available through March 31st.\n\nDon't miss this opportunity to connect with peers, learn about the latest industry developments, and position your organization for success in the evolving global marketplace.",
+    "priority": "low",
+    "featuredImage": "https://example.com/economic-summit.jpg",
+    "attachments": [
+      {
+        "name": "summit-agenda.pdf",
+        "size": 2100000,
+        "type": "application/pdf",
+        "url": "#"
+      },
+      {
+        "name": "speaker-profiles.pdf",
+        "size": 1650000,
+        "type": "application/pdf",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-11T14:30:00Z"
+  },
+  {
+    "Id": 4,
+    "headline": "Technology Grant Program Launches for Member Organizations",
+    "content": "The Trade Organization Technology Initiative is pleased to announce the launch of our new technology grant program. This program provides funding support for member organizations looking to implement digital transformation projects.\n\nGrants of up to $50,000 are available for qualifying projects including supply chain digitization, e-commerce platform development, and data analytics implementation. Applications are being accepted on a rolling basis through June 30th.\n\nThis initiative reflects our commitment to helping member organizations leverage technology for competitive advantage and operational efficiency.",
+    "priority": "medium",
+    "featuredImage": "https://example.com/tech-grants.jpg",
+    "attachments": [
+      {
+        "name": "grant-application.pdf",
+        "size": 975000,
+        "type": "application/pdf",
+        "url": "#"
+      },
+      {
+        "name": "eligibility-criteria.docx",
+        "size": 567000,
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "#"
+      }
+    ],
+    "createdAt": "2024-01-09T10:15:00Z"
+  }
+]
