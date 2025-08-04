@@ -271,5 +271,3 @@ const blogService = {
 };
 
 export default blogService;
-
-export default blogService;

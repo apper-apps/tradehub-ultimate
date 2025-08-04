@@ -271,5 +271,3 @@ const newsService = {
 };
 
 export default newsService;
-
-export default newsService;

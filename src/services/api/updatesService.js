@@ -267,5 +267,3 @@ const updatesService = {
 };
 
 export default updatesService;
-
-export default updatesService;
