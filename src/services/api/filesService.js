@@ -96,6 +96,25 @@ const filesService = {
         apperPublicKey: import.meta.env.VITE_APPER_PUBLIC_KEY
       });
 
+// Validate and format URL for Website field type
+      const isValidUrl = (string) => {
+        try {
+          new URL(string);
+          return true;
+        } catch (_) {
+          return false;
+        }
+      };
+
+      const formatUrl = (url, fileName) => {
+        if (url && isValidUrl(url)) {
+          return url;
+        }
+        // Generate fallback URL for file access
+        const cleanFileName = (fileName || 'file').replace(/[^a-zA-Z0-9.-]/g, '_');
+        return `https://files.app.com/${cleanFileName}`;
+      };
+
       // Only include updateable fields
       const payload = {
         Name: fileData.name || fileData.Name,
@@ -104,7 +123,7 @@ const filesService = {
         size: parseInt(fileData.size) || 0,
         type: fileData.type,
         category: fileData.category,
-        url: fileData.url,
+        url: formatUrl(fileData.url, fileData.name || fileData.Name),
         uploadedAt: fileData.uploadedAt || new Date().toISOString()
       };
 
@@ -159,6 +178,25 @@ const filesService = {
         apperPublicKey: import.meta.env.VITE_APPER_PUBLIC_KEY
       });
 
+// Validate and format URL for Website field type
+      const isValidUrl = (string) => {
+        try {
+          new URL(string);
+          return true;
+        } catch (_) {
+          return false;
+        }
+      };
+
+      const formatUrl = (url, fileName) => {
+        if (url && isValidUrl(url)) {
+          return url;
+        }
+        // Generate fallback URL for file access
+        const cleanFileName = (fileName || 'file').replace(/[^a-zA-Z0-9.-]/g, '_');
+        return `https://files.app.com/${cleanFileName}`;
+      };
+
       // Only include updateable fields
       const payload = {
         Id: id,
@@ -168,7 +206,7 @@ const filesService = {
         size: parseInt(fileData.size) || 0,
         type: fileData.type,
         category: fileData.category,
-        url: fileData.url
+        url: formatUrl(fileData.url, fileData.name || fileData.Name)
       };
 
       const params = {
