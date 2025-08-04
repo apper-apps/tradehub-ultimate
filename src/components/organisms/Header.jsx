@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
+import { AuthContext } from "../../App";
 
 const Header = ({ onMenuClick }) => {
   const location = useLocation();
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const { logout } = useContext(AuthContext);
+  const user = useSelector((state) => state.user.user);
 
   const getPageTitle = () => {
     const path = location.pathname;
@@ -15,6 +19,7 @@ const Header = ({ onMenuClick }) => {
     if (path.includes("/news")) return "News Management";
     if (path.includes("/updates")) return "Updates Management";
     if (path.includes("/files")) return "File Management";
+    if (path.includes("/admin-users")) return "Admin Users Management";
     return "TradeHub Pro";
   };
 
@@ -31,12 +36,19 @@ const Header = ({ onMenuClick }) => {
         breadcrumbs.push("Create New");
       } else if (segment === "edit") {
         breadcrumbs.push("Edit");
+      } else if (segment === "admin-users") {
+        breadcrumbs.push("Admin Users");
       } else {
         breadcrumbs.push(formattedSegment);
       }
     });
     
     return breadcrumbs;
+  };
+
+  const handleLogout = async () => {
+    setIsProfileOpen(false);
+    await logout();
   };
 
   return (
@@ -100,7 +112,9 @@ const Header = ({ onMenuClick }) => {
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
                 <ApperIcon name="User" className="h-4 w-4 text-white" />
               </div>
-              <span className="hidden md:block text-sm">Admin</span>
+              <span className="hidden md:block text-sm">
+                {user?.firstName || user?.name || "Admin"}
+              </span>
               <ApperIcon name="ChevronDown" className="h-3 w-3" />
             </Button>
 
@@ -108,8 +122,15 @@ const Header = ({ onMenuClick }) => {
             {isProfileOpen && (
               <div className="absolute right-0 top-full mt-2 w-48 glass-card rounded-lg shadow-xl border border-slate-600 py-2 z-50">
                 <div className="px-4 py-2 border-b border-slate-600">
-                  <p className="text-sm font-medium text-white">Administrator</p>
-                  <p className="text-xs text-gray-400">admin@tradehub.com</p>
+                  <p className="text-sm font-medium text-white">
+                    {user?.firstName && user?.lastName 
+                      ? `${user.firstName} ${user.lastName}`
+                      : user?.name || "Administrator"
+                    }
+                  </p>
+                  <p className="text-xs text-gray-400">
+                    {user?.emailAddress || user?.email || "admin@tradehub.com"}
+                  </p>
                 </div>
                 <div className="py-1">
                   <button className="w-full px-4 py-2 text-sm text-gray-300 hover:bg-slate-750/50 text-left flex items-center gap-2">
@@ -121,7 +142,10 @@ const Header = ({ onMenuClick }) => {
                     Settings
                   </button>
                   <hr className="my-1 border-slate-600" />
-                  <button className="w-full px-4 py-2 text-sm text-error hover:bg-error/10 text-left flex items-center gap-2">
+                  <button 
+                    onClick={handleLogout}
+                    className="w-full px-4 py-2 text-sm text-error hover:bg-error/10 text-left flex items-center gap-2"
+                  >
                     <ApperIcon name="LogOut" className="h-4 w-4" />
                     Sign Out
                   </button>

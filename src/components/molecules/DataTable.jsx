@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
 import Badge from "@/components/atoms/Badge";
+import Button from "@/components/atoms/Button";
 import { cn } from "@/utils/cn";
 
 const DataTable = ({ 
@@ -34,24 +34,28 @@ const DataTable = ({
     return 0;
   });
 
-  const renderCellValue = (item, column) => {
-    const value = item[column.key];
+const renderCellValue = (item, column) => {
+    let value = item[column.key];
+    
+    // Handle lookup fields that might be objects
+    if (value && typeof value === 'object' && value.Name !== undefined) {
+      value = value.Name;
+    }
     
     if (column.render) {
       return column.render(value, item);
     }
     
     if (column.type === "date") {
-      return new Date(value).toLocaleDateString();
+      return value ? new Date(value).toLocaleDateString() : "";
     }
     
     if (column.type === "badge") {
       return <Badge variant={column.getBadgeVariant?.(value) || "default"}>{value}</Badge>;
     }
     
-    return value;
+return value || "";
   };
-
   return (
     <div className={cn("glass-card rounded-xl overflow-hidden", className)}>
       <div className="overflow-x-auto">
