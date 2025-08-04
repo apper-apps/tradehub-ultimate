@@ -41,10 +41,10 @@ const Blog = () => {
   }, []);
 
   const handleSearch = (searchTerm) => {
-    const filtered = posts.filter(post =>
+const filtered = posts.filter(post =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
+      (post.tags || []).some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
     );
     setFilteredPosts(filtered);
   };
@@ -91,18 +91,18 @@ const Blog = () => {
       )
     },
     {
-      key: "tags",
+key: "tags",
       label: "Tags",
       render: (tags) => (
         <div className="flex gap-1 flex-wrap">
-          {tags.slice(0, 2).map((tag, index) => (
+          {(tags ?? []).slice(0, 2).map((tag, index) => (
             <Badge key={index} variant="default" className="text-xs">
               {tag}
             </Badge>
           ))}
-          {tags.length > 2 && (
+          {(tags ?? []).length > 2 && (
             <Badge variant="default" className="text-xs">
-              +{tags.length - 2}
+              +{(tags ?? []).length - 2}
             </Badge>
           )}
         </div>
